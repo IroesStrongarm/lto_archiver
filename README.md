@@ -11,4 +11,4 @@ The script performs the following tasks:
 
 When first run it will prompt the user for information such as source and destination locations, as well as how much redundancy is desired.
 
-This script relies on having hashdeep and par2 installed.
+This script relies on having `hashdeep` and `par2` installed.

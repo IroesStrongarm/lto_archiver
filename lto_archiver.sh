@@ -86,6 +86,7 @@ echo -e "${GREEN}[5/5] Verifying archive...${NC}"
   # 1. Verify TAR checksum (newly generated)
   echo "  - Generating TAR checksum..."
   sha256sum "${DEST_DIR}/${TAR_NAME}.tar" > "${DEST_DIR}/${TAR_NAME}.tar.sha256"
+  sed -i 's|^\([0-9a-f]\{64\}\)  .*/|\1  |' "${DEST_DIR}/${TAR_NAME}.tar.sha256"
 
   # 2. Verify internal file checksums
   echo "  - Verifying internal files..."

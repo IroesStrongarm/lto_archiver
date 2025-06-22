@@ -12,3 +12,6 @@ The script performs the following tasks:
 When first run it will prompt the user for information such as source and destination locations, as well as how much redundancy is desired.
 
 This script relies on having `hashdeep` and `par2` installed.
+
+# checksum_verifier
+This script is useful for confirming that all the files in your restored archive match the original checksums.  You are given the option to either compare two checksum files against each other, or generate the checksum file on a given directly and then compare to the original.

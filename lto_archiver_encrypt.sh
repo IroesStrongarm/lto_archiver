@@ -78,8 +78,8 @@ if [ "$USE_ENCRYPTION" = "y" ]; then
 fi
 
 prompt_input "Enter tape serial" "TAPE_SER" "None" "^[A-Za-z0-9]+$" "Letters and Numbers only"
-prompt_input "Enter source directory" "SOURCE_DIR" "$HOME" "^\/.+" "Path must start with /"
-prompt_input "Enter destination directory" "DEST_DIR" "/backup" "^\/.+" "Path must start with /"
+prompt_input "Enter source directory" "SOURCE_DIR" "/mnt/large_ssd/raw/" "^\/.+" "Path must start with /"
+prompt_input "Enter destination directory" "DEST_DIR" "/mnt/small_ssd/archive/" "^\/.+" "Path must start with /"
 prompt_input "Enter TAR filename (without .tar)" "TAR_NAME" "${TAPE_SER}_$(date +%Y-%m-%d)" "^[a-zA-Z0-9_.-]+$" "Only letters/numbers/._-"
 prompt_input "Enter PAR2 redundancy %" "REDUNDANCY" "10" "^[0-9]+$" "Must be number"
 prompt_input "Enter PAR2 blocks" "PAR2_BLOCKS" "2" "^[0-9]+$" "Must be number"
